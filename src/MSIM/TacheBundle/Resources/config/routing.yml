@@ -1,0 +1,12 @@
+msim_tache_list:
+    path:     /list
+    defaults: { _controller: MSIMTacheBundle:Tache:list }
+
+msim_tache_afficher:
+    path:     /afficher/{id}
+    defaults: { _controller: MSIMTacheBundle:Tache:afficher }
+
+msim_tache_ajouter:
+    path:     /ajouter
+    defaults: { _controller: MSIMTacheBundle:Tache:ajouter }
+    

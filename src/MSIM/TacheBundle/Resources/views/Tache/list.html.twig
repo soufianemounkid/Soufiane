@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>TODO.COM</title>
+		
+		<style type="text/css">
+			a:link{
+				text-decoration:none;
+			}
+		</style>
+</head>
+<body>
+	<h1>TODO.COM <a href="{{path('msim_tache_ajouter')}}" style="font-size:50px;">+</a></h1>
+	
+
+	<h3>A faire:</h3>
+	<ul>
+
+		{% for tache in taches %}
+		<li>
+			<a href="{{ path('msim_tache_afficher', { 'id': tache.id }) }}">{{tache.name}}</a>
+		</il>
+		{% endfor %}
+
+	</ul>
+
+	<h4><a href="https://plus.google.com/u/0/+SoufianeMounkid/about">@MOUNKID Soufiane</a></h4>
+
+</body>
+</html>

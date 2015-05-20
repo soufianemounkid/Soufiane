@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title> TODO.COM</title>
+	<style type="text/css">
+			a:link{
+				text-decoration:none;
+			}
+	</style>
+</head>
+<body>
+	<h1>TODO.COM  <button><a href="{{path('msim_tache_list')}}">retour</a></button></h1>
+	<p><b style="font-size:20px">{{tache.name}} :</b> <br>
+		<br><b>A faire avant le </b>{{tache.dateTache|date('Y-m-d H:i:s')}}</p>
+		<bR><b>Description</b>
+			<br><p>{{tache.description}}</p>
+	
+
+<h4><a href="https://plus.google.com/u/0/+SoufianeMounkid/about">@MOUNKID Soufiane</a></h4>
+</body>
+</html>
